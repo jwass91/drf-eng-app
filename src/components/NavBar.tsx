@@ -10,7 +10,7 @@ const NavBar: React.FC = () => {
         </Typography>
         <Button
           onClick={() => {
-            const url = "https://www.google.com";
+            const url = "https://github.com/jwass91/drf-eng-app";
             window.open(url, "_blank");
           }}
           style={{ color: "white", marginRight: "theme.spacing(2)" }}

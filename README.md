@@ -1,6 +1,6 @@
 ## DRF Engineer-in-Residence Coding Challenge
 
-View the app live [here]().
+View the app live [here](http://jwass91.github.io/drf-eng-app).
 
 ### Part 1
 
