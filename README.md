@@ -1,44 +1,13 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## DRF Engineer-in-Residence Coding Challenge
 
-## Available Scripts
+View the app live [here]().
 
-In the project directory, you can run:
+### Part 1
 
-### `npm start`
+My take on a creative way to render a circle in the browser was to create a circle out of a bunch of divs with fixed positions. Even though the circle's edges are a little rough, I thought this was a cool way to create my circle. It's obviously a lot easier to create the circle by just giving the div a `border-radius` of `50%` and my "circle points" are circles themselves, but for my main circle, I wanted to be more creative.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Using React, I created a `CirclePoint` component that renders a `div` with absolute positioning using the sine and cosine of the given angle. Then, there is a `Circle` component that renders an array of `CirclePoint` components using a generator function.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Part 2
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+I used React, Redux, and TypeScript to create my web application. I have a connected `Form` component that allows the user to join a room and then hide and show the circles of the other users in that room. The app is styled with [MaterialUI](https://material-ui.com). I used the boilerplate [Create React App](https://github.com/facebook/create-react-app) template. There is a simple test suite for the Redux store written in [Jest](https://jestjs.io).

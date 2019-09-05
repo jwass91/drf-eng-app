@@ -1,26 +1,60 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { createMuiTheme, MuiThemeProvider } from "@material-ui/core";
+import { blue, pink } from "@material-ui/core/colors";
+import { NavBar, Circle, JoinForm } from "./components";
+import io from "socket.io-client";
+import { AppState } from "./store/types";
+import { connect } from "react-redux";
+import { setSocket, updateCircleVisibility } from "./store/actions";
 
-const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const theme = createMuiTheme({
+  palette: {
+    primary: blue,
+    secondary: pink
+  }
+});
+
+interface AppProps {
+  socket?: SocketIOClient.Socket;
+  setSocket: typeof setSocket;
+  updateCircleVisibility: typeof updateCircleVisibility;
 }
 
-export default App;
+export class App extends React.Component<AppProps> {
+  updateCircleVisibility = (showCircle: boolean) => {
+    if (showCircle !== undefined) {
+      this.props.updateCircleVisibility(showCircle);
+    }
+  };
+
+  componentDidMount() {
+    const socket = io("https://drf-eng-app-2019.herokuapp.com");
+    const { updateCircleVisibility } = this.props;
+    socket.on("message", function({ showCircle }: { showCircle: boolean }) {
+      console.log(`Received ${showCircle} message`);
+      updateCircleVisibility(showCircle);
+    });
+    this.props.setSocket(socket);
+  }
+
+  render() {
+    return (
+      <MuiThemeProvider theme={theme}>
+        <div className="App">
+          <NavBar />
+          <JoinForm />
+          <Circle radius={100} steps={1000} />
+        </div>
+      </MuiThemeProvider>
+    );
+  }
+}
+
+const mapStateToProps = (state: AppState) => ({
+  socket: state.socket
+});
+
+export default connect(
+  mapStateToProps,
+  { setSocket, updateCircleVisibility }
+)(App);
