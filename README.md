@@ -2,6 +2,8 @@
 
 View the app live [here](http://jwass91.github.io/drf-eng-app).
 
+Or, run the app locally using `npm start`.
+
 ### Part 1
 
 My take on a creative way to render a circle in the browser was to create a circle out of a bunch of divs with fixed positions. Even though the circle's edges are a little rough, I thought this was a cool way to create my circle. It's obviously a lot easier to create the circle by just giving the div a `border-radius` of `50%` and my "circle points" are circles themselves, but for my main circle, I wanted to be more creative.
