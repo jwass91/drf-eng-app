@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/drf-eng-app/static/css/main.685dea8f.chunk.css",
-    "main.js": "/drf-eng-app/static/js/main.dcf77986.chunk.js",
-    "main.js.map": "/drf-eng-app/static/js/main.dcf77986.chunk.js.map",
+    "main.js": "/drf-eng-app/static/js/main.6ed21e0e.chunk.js",
+    "main.js.map": "/drf-eng-app/static/js/main.6ed21e0e.chunk.js.map",
     "runtime~main.js": "/drf-eng-app/static/js/runtime~main.408e77a0.js",
     "runtime~main.js.map": "/drf-eng-app/static/js/runtime~main.408e77a0.js.map",
     "static/js/2.5680d284.chunk.js": "/drf-eng-app/static/js/2.5680d284.chunk.js",
     "static/js/2.5680d284.chunk.js.map": "/drf-eng-app/static/js/2.5680d284.chunk.js.map",
     "index.html": "/drf-eng-app/index.html",
-    "precache-manifest.28a3542b25c8a08c0b66599233951abc.js": "/drf-eng-app/precache-manifest.28a3542b25c8a08c0b66599233951abc.js",
+    "precache-manifest.5e9a5d8fc2d6463baf004f2855d257cc.js": "/drf-eng-app/precache-manifest.5e9a5d8fc2d6463baf004f2855d257cc.js",
     "service-worker.js": "/drf-eng-app/service-worker.js",
     "static/css/main.685dea8f.chunk.css.map": "/drf-eng-app/static/css/main.685dea8f.chunk.css.map"
   }
