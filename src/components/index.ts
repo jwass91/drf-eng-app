@@ -1,6 +1,6 @@
 import NavBar from "./NavBar";
 import CirclePoint from "./CirclePoint";
 import Circle from "./Circle";
-import JoinForm from "./JoinForm";
+import Form from "./Form";
 
-export { NavBar, CirclePoint, Circle, JoinForm };
+export { NavBar, CirclePoint, Circle, Form };

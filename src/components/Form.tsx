@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { updateRoom, join } from "../store/actions";
 import { green } from "@material-ui/core/colors";
 
-interface JoinFormProps {
+interface FormProps {
   room: string;
   live: boolean;
   updateRoom: typeof updateRoom;
@@ -24,7 +24,7 @@ function handleEnterKeyPress(
   return false;
 }
 
-export class JoinForm extends React.PureComponent<JoinFormProps> {
+export class Form extends React.PureComponent<FormProps> {
   onInputChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     this.props.updateRoom(e.target.value);
   };
@@ -112,7 +112,7 @@ const mapStateToProps = (state: AppState) => ({
 export default connect(
   mapStateToProps,
   { updateRoom, join }
-)(JoinForm);
+)(Form);
 
 const GreenButton = withStyles(() => ({
   root: {

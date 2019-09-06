@@ -1,7 +1,7 @@
 import React from "react";
 import { createMuiTheme, MuiThemeProvider } from "@material-ui/core";
 import { blue, pink } from "@material-ui/core/colors";
-import { NavBar, Circle, JoinForm } from "./components";
+import { NavBar, Circle, Form } from "./components";
 import io from "socket.io-client";
 import { AppState } from "./store/types";
 import { connect } from "react-redux";
@@ -42,7 +42,7 @@ export class App extends React.Component<AppProps> {
       <MuiThemeProvider theme={theme}>
         <div className="App">
           <NavBar />
-          <JoinForm />
+          <Form />
           <Circle radius={100} steps={1000} />
         </div>
       </MuiThemeProvider>
