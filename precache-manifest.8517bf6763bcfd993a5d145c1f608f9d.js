@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3bfa4c2947a49dbb818c756394650f03",
+    "revision": "4ea9e6eb00cdde22f09ce3370766ad6a",
     "url": "/drf-eng-app/index.html"
   },
   {
-    "revision": "f5402cbbfeea8e4dd58a",
+    "revision": "ae8f782abf10d5cc117c",
     "url": "/drf-eng-app/static/css/main.685dea8f.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/drf-eng-app/static/js/2.5680d284.chunk.js"
   },
   {
-    "revision": "f5402cbbfeea8e4dd58a",
-    "url": "/drf-eng-app/static/js/main.17ef5775.chunk.js"
+    "revision": "ae8f782abf10d5cc117c",
+    "url": "/drf-eng-app/static/js/main.363a047f.chunk.js"
   },
   {
     "revision": "299d1224a9f7c6a657cf",
