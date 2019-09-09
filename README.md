@@ -2,7 +2,7 @@
 
 View the app live [here](http://jwass91.github.io/drf-eng-app).
 
-Or, run the app locally using `npm start`.
+Or, run the app locally using `npm start` (after running `npm install`).
 
 ### Part 1
 
